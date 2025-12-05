@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achilee POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="cat-title">หมวดหมู่</h2>
+        <button class="cat-btn active">Hot</button>
+        <button class="cat-btn">Food</button>
+        <button class="cat-btn">Mobile</button>
+        <button class="cat-btn">Retail</button>
+        <button class="cat-btn">Petdy</button>
+        <button class="cat-btn">Uncategory</button>
+    </aside>
+
+    <!-- Product Panel -->
+    <main class="product-panel">
+        
+        <div class="top-bar">
+            <input id="search" type="text" placeholder="ค้นหาสินค้า...">
+        </div>
+
+        <div id="productGrid" class="grid"></div>
+
+    </main>
+
+    <!-- Cart -->
+    <aside class="cart">
+
+        <div class="cart-header">
+            <h3>ตะกร้าสินค้า</h3>
+        </div>
+
+        <div id="cartList" class="cart-items">
+            <p class="empty">ยังไม่มีสินค้า</p>
+        </div>
+
+        <div class="cart-summary">
+            <p>รวมทั้งหมด: <span id="total">0</span> บาท</p>
+            <button id="payBtn" class="btn-pay">ชำระเงิน</button>
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
